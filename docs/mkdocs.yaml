@@ -1,0 +1,50 @@
+# Configuration for mkdocs
+
+site_name: Focalize documentation
+site_url: https://dusktreader.github.io/focalize/
+repo_url: https://github.com/dusktreader/focalize
+docs_dir: source
+theme:
+  name: material
+  features:
+    - navigation.expand
+  pallete:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+nav:
+  - Home: index.md
+  - Reference: reference.md
+watch:
+  - ../focalize
+plugins:
+  search:
+    lang: en
+  mkdocstrings:
+    default_handler: python
+    handlers:
+      python:
+        paths: [..]
+        options:
+          heading_level: 3
+          show_root_heading: true
+          separate_signature: true
+          show_signature_annotations: true
+          show_source: false
+          docstring_style: google
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite:
+  - pymdownx.snippets:
+  - pymdownx.superfences:
+  - pymdownx.details:
+  - admonition:
+  - attr_list:

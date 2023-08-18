@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "focalize"
+version = "0.1.0"
+description = "Provide a formatter for loguru loggers that indents and contextualizes log blocks"
+authors = ["Tucker Beck <tucker.beck@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+loguru = ">=0.5"
+pendulum = ">=2.0"
+
+[tool.poetry.scripts]
+focalize-demo = "examples.demo:run"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.285"
+mypy = "^1.5.1"
+mkdocs-material = "^9.1.21"
+mkdocstrings = {extras = ["python"], version = "^0.22.0"}
+
+[tool.ruff]
+line-length = 100
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
