@@ -12,7 +12,7 @@ loguru = ">=0.5"
 pendulum = ">=2.0"
 
 [tool.poetry.scripts]
-focalize-demo = "examples.demo:run"
+focalize-demo = "examples.full:run"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.0.285"

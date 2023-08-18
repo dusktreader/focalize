@@ -2,7 +2,7 @@
 
 **You can't depend on your eyes when your imagination is out of focus _--Mark Twain_**
 
-![asciicast](https://github.com/dusktreader/focalize/blob/main/docs/source/images/focalize-demo.gif)
+![asciicast](https://github.com/dusktreader/focalize/blob/main/docs/source/images/focalize.gif)
 
 Focalize provides context within logs for blocks of code that are encircled by a
 context manager. This helps contextualize log lines within deeply nested call chains or
