@@ -1,9 +1,10 @@
 # Focalize
 
-**The mind thinks about one object and avoids other thoughts _--Gregor Mahle_**
+**You can't depend on your eyes when your imagination is out of focus _--Mark Twain_**
 
+![asciicast](https://github.com/dusktreader/focalize/blob/main/docs/source/images/focalize-demo.gif)
 
-Focalize provide context within logs for blocks of code that are encircled by a
+Focalize provides context within logs for blocks of code that are encircled by a
 context manager. This helps contextualize log lines within deeply nested call chains or
 within complex operations where many logical steps are taken.
 
@@ -16,4 +17,3 @@ within complex operations where many logical steps are taken.
 ## Documentation
 
 The complete documentation can be found at the [focalize documentation page](https://dusktreader.github.io/focalize/)
-
